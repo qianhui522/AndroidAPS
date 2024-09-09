@@ -4,6 +4,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
     repositories {
+        maven {
+            url = uri("https://maven.aliyun.com/nexus/content/groups/public/")
+        }
         google()
         mavenCentral()
     }
@@ -27,6 +30,9 @@ plugins {
 
 allprojects {
     repositories {
+        maven {
+            url = uri("https://maven.aliyun.com/nexus/content/groups/public/")
+        }
         google()
         mavenCentral()
         maven("https://maven.google.com")
